@@ -27,9 +27,11 @@ namespace PerformanceTest
                     {
                         var position = new Vector3(x * _spacing, y * _spacing, z * _spacing);
                         if (_centered) position -= new Vector3(_countX - 1, _countY - 1, _countZ - 1) * _spacing / 2f;
-                        var instance = (GameObject) UnityEditor.PrefabUtility.InstantiatePrefab(_prefab, transform);
+#if UNITY_EDITOR
+                        var instance = (GameObject)UnityEditor.PrefabUtility.InstantiatePrefab(_prefab, transform);
                         instance.transform.position = position;
                         instance.name = $"{_prefab.name}_({x}|{y}|{z})";
+#endif
                     }
                 }
             }
