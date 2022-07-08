@@ -17,9 +17,12 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Spheres3.unity
     guid: 436eb4546cf9fe2479573e1e4d831f3f
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Spheres4.unity
     guid: 310a397bc9d906144ad4ade225d46356
+  - enabled: 1
+    path: Assets/Scenes/Spheres5.unity
+    guid: 20f523da4ef3a02419beb1d0b6fbee6a
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: f58328edd7508c349a2e2af8bd69b930, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 7a59d89dab930e44cb7a2f3ee406cdbc, type: 2}
